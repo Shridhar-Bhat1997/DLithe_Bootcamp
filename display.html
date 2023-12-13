@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        /* Block-level elements */
+        .block {
+            display: block;
+            height: 100px;
+            background-color: rgb(55, 200, 248);
+            margin-bottom: 10px;
+        }
+
+        /* Inline-level elements */
+        .inline {
+            display: inline;
+            padding: 5px;
+            background-color: lightgreen;
+            margin-right: 10px;
+        }
+
+        /* Inline-block elements */
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+            margin-bottom: 10px;
+        }
+
+        /* Apply Flexbox to the container */
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 300px;
+    background-color: lightgray;
+}
+
+/* Style individual flex items */
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+
+    <h2>Display Properties in CSS </h2>
+
+    <div class="block">Block Element</div>
+    <span class="inline">Inline Element</span>
+    <br> <br>
+    <div class="inline-block">Inline Block Element</div>
+    <div class="inline-block">Inline Block Elements</div>
+
+
+    <h2>Flexbox in CSS</h2>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
