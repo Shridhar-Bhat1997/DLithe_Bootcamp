@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Properties Example</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .static {
+      background-color: #f0f0f0;
+    }
+
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: #e0e0e0;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: #d0d0d0;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #c0c0c0;
+    }
+
+    .content {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar {
+      width: 30%;
+      padding: 10px;
+      background-color:yellow;
+      position: sticky;
+      top: 570px; /* Sticky from this point */
+    }
+
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Position Properties Example</h1>
+
+    <div class="content static">
+      <h2>Static Position</h2>
+      <p>This is a static positioned element. It follows the normal flow of the document.</p>
+    </div>
+
+    <div class="content relative">
+      <h2>Relative Position</h2>
+      <p>This element has a relative position and is shifted 20px down and 30px to the right from its normal position.</p>
+    </div>
+
+    <div class="content absolute">
+      <h2>Absolute Position</h2>
+      <p>This element is absolutely positioned with respect to its closest positioned ancestor (or the body if no positioned ancestor exists).</p>
+    </div>
+
+    <div class="content fixed">
+      <h2>Fixed Position</h2>
+      <p>This element is fixed to the bottom-right corner of the viewport. It stays in the same position even when scrolling.</p>
+    </div>
+
+    
+  </div>
+  
+</body>
+</html>
