@@ -1,0 +1,31 @@
+<!-- getElementByTagName():it is used to select multiple elements based on tag name within an 
+array.individual elements can be accessed based on their index position.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body style="text-align: center"> 
+        
+        <h2> 
+            DOM getElementsByTagName() 
+        </h2> 
+      
+        <p>DLithe Bootcamp</p> 
+      
+        <button onclick="geek()">Try it</button> 
+        <script> 
+            function geek() { 
+            var doc = document.getElementsByTagName("p"); 
+            doc[0].style.background = "green"; 
+            doc[0].style.color = "white"; 
+            } 
+        </script> 
+    </body>
+    
+</html>
