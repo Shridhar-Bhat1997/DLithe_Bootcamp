@@ -1,0 +1,56 @@
+<!-- it is used to select multiple elements based on the class names 
+within in array.individual elements can be accessed based on their index position.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+          DOM getElementByClassName() Method
+      </title>
+    <style>
+        h1 {
+            color: green;
+        }
+ 
+        body {
+            text-align: center;
+        }
+ 
+        .example {
+            padding: 10px;
+            margin: auto;
+            margin-top: 10px;
+            border: 1px solid black;
+            width: 300px;
+        }
+    </style>
+</head>
+ 
+<body>
+    
+    <h2>
+       DOM getElementByClassName() Method
+   </h2>
+    <div>
+        <h4 class="example">
+          div1
+          </h4>
+        <h4 class="yellowBorder example">
+          div2
+          </h4>
+        <h4 class="greenBorder example">
+          div3
+          </h4>
+        <h4 class="example">
+          div4
+          </h4>
+    </div>
+    <script>
+        document.getElementsByClassName('greenBorder example')[0]
+                  .style.border = "30px solid green";
+        document.getElementsByClassName('yellowBorder example')[0]
+                  .style.border = "10px solid yellow";
+    </script>
+</body>
+  
+</html>
