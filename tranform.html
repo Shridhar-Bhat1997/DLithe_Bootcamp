@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transform Properties Example</title>
+  <style>
+       body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin: 20px;
+      display: inline-block;
+      transition: transform 0.3s ease-in-out; /* Adding transition for smoother effects */
+    }
+
+    .box:hover {
+      transform: scale(1.2); /* Scale effect on hover */
+    }
+
+    .rotate {
+      transform: rotate(45deg); /* Rotate by 45 degrees */
+    }
+
+    .skew {
+      transform: skew(30deg, 20deg); /* Skew horizontally by 30 degrees and vertically by 20 degrees */
+    }
+
+    .translate {
+      transform: translate(50px, 20px); /* Translate/move 50px horizontally and 20px vertically */
+    }
+
+    .container2 {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin: 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease-in-out; /* Adding transition for background color change */
+    }
+
+    .box:hover {
+      background-color: #aaf0aa; /* New background color on hover */
+    }
+
+    .width-transition {
+      width: 250px;
+      transition: width 0.5s ease-in-out; /* Transition for width change */
+    }
+
+    .height-transition {
+      height: 250px;
+      transition: height 0.5s ease-in-out; /* Transition for height change */
+    }
+
+    .opacity-transition {
+      opacity: 0.5;
+      transition: opacity 0.5s ease-in-out; /* Transition for opacity change */
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Normal Box</div>
+    <div class="box rotate">Rotated Box</div>
+    <div class="box skew">Skewed Box</div>
+    <div class="box translate">Translated Box</div>
+
+  </div>
+
+  <div class="container2">
+    <div class="box">Hover to Change Color</div>
+    <div class="box width-transition">Width Transition</div>
+    <div class="box height-transition">Height Transition</div>
+    <div class="box opacity-transition">Opacity Transition</div>
+  </div>
+</body>
+</html>
